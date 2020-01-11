@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 1px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+/* header section css*/
+.header{
+    width: 100%;
+    min-height: 70px;
+    background-color: #4d4d4d;
+}
+#logo{
+ color:#FFFFFF;
+ float: left;
+ margin: 15px 0px 10px 70px;
+ font-size: 2rem;
+ 
+}
+
+#admin{
+    float: right;   
+    min-width: 20px;
+}
+#user{
+    color:white;
+    float: right;
+    margin: 20px 5px 10px 20px;
+    font-size: 1.7rem;
+    
+}
+#drop-icon{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 25px 80px 10px 0px;
+}
+
+
+/************   FOOTER   SECTION ************/
+
+footer{
+    width: 100%;
+    padding-top: 30px;
+    padding: 10px 0px 10px 30px;
+    height: 50px;
+    color: black;
+    font-size: 1.2rem;
+    -webkit-box-shadow: -4px -13px 18px -13px rgba(0,0,0,0.5);
+    -moz-box-shadow: -4px -13px 18px -13px rgba(0,0,0,0.5);
+    box-shadow: -4px -13px 18px -13px rgba(0,0,0,0.5);
+}
+
+/*************** sidebar section css starts here****************/
+.sileMenuSection{
+    margin: 20px 0px 0px 0px;
+    overflow: hidden;
+    
+}
+
+.sileMenuSection h2{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+#logo_menu{
+    padding: 10px 35px;
+    width: 100%;
+    
+    
+}
+#logo_menu img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+}
+#logo_menu h6{
+    float: left;
+    margin: 12px 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+   
+}
+
+.sideMenu{
+    
+    background-color: white;
+   
+    width: ;
+    float: left;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    opacity: 1;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: -1px -1px 17px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 17px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 17px -1px rgba(0,0,0,0.75);
+    
+    
+    
+}
+
+.sideMenu a{
+      font-weight: bold;
+      padding: 15px 50px;
+      width: 100%;
+      float: left;
+      color: black;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #8CC63F;
+      opacity: 1;
+     
+}
+
+.sideMenu a:hover{
+    background-color: #8CC63F;
+    color: #FFFFFF;
+}
+
+ /*************** sidebar section css ends here****************/
+
+
+  /*************** Dashboard view section css starts here****************/
+.dashview{
+    width: 90%;
+    overflow: hidden;
+}
+
+  .dashbar{
+      min-height: 150px;
+      min-width: 30%;
+      margin: 10px 10px;
+      background-color: #8cc63f; color: white;
+      border-radius: 5px;
+  }
+  .dash_cat{
+      width: 100%;
+     
+      
+  }
+  .dash_name{
+      width: 70%;
+      float: left;
+      margin-top: 10px;
+      
+  }
+  .dash_name h6{
+    font-size: 1.8rem;
+    color: black;
+    
+}
+  .dash_notify{
+    width:30px;
+    border-radius:15px;
+    
+    padding-top: 7px;
+    margin-right: 10px;
+    background-color: black;
+    float: right;
+}
+
+
+  /*************** Dashboard view section css ends here****************/
+
+
+  
+
+
+
+  
+  /*************** students page css starts here****************/
+.seachBox{
+    width: 300px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    background-color: none;
+    background-image: url('../image/search.PNG');
+    background-size: auto;
+    background-position: 8px 7px; 
+    background-repeat: no-repeat;
+    padding: 5px 10px 5px 45px;
+    border-radius: 2px;
+    outline: none;
+}
+.seachBox:hover{
+    border: 1px solid #8CC63F;
+}
+  .student_body{
+ background-color: #e5dede;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /************** Bootstrap css edit ************/
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid 
+    #1e1e1e;
+        border-bottom-width: 2px;
+}
+.table-bordered th {
+    border: 1px solid 
+    #0d0d0d;
+        border-bottom-color: rgb(13, 13, 13);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+}

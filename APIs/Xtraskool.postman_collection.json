@@ -1,0 +1,1081 @@
+{
+	"info": {
+		"_postman_id": "fe00998e-5cd6-4d02-9a49-54f6f65e9b7c",
+		"name": "Xtraskool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registation with username and password",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "04417351-a2fc-4b58-9056-ea4a0284d5d4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5a3ea168-b568-4dde-bee3-ff764946a770",
+						"exec": [
+							"{",
+							"    \"sid\":\"5\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"ratul\",\n    \"password\" : \"54321\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/registerStudent.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"registerStudent.php"
+					]
+				},
+				"description": "Sent request to get all the data in databse students"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/registerStudent.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"Amdad1208\",\n    \"password\" : \"12345\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/registerStudent.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"registerStudent.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Oct 2019 16:33:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=99"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"id\": \"155\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "All student Info",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "04417351-a2fc-4b58-9056-ea4a0284d5d4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5a3ea168-b568-4dde-bee3-ff764946a770",
+						"exec": [
+							"{",
+							"    \"sid\":\"5\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/students.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"students.php"
+					]
+				},
+				"description": "Sent username and password to register a new student\nand it will sent back the id of the new created student"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/universitys.php",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/students.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"students.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Oct 2019 16:39:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1849"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": [\n        {\n            \"sid\": \"110\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"111\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"112\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"113\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"114\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"115\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"39\"\n        },\n        {\n            \"sid\": \"141\",\n            \"username\": \"Amdadul Hoqwe\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"37\"\n        },\n        {\n            \"sid\": \"152\",\n            \"username\": \"Amdad1208\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"153\",\n            \"username\": \"Amdad1208\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"154\",\n            \"username\": \"Amdad1208\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"0\"\n        },\n        {\n            \"sid\": \"155\",\n            \"username\": \"Amdad1208\",\n            \"password\": \"12345\",\n            \"s_name\": \"\",\n            \"alias\": \"\",\n            \"gender\": \"\",\n            \"edu_start\": \"0000-00-00\",\n            \"duration\": \"\",\n            \"interest\": \"\",\n            \"University_id\": \"40\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All university Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/universitys.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"universitys.php"
+					]
+				},
+				"description": "if the university is new just sent empty on uid.. it will register a new university and update student profile and retuen stident id(sid), university_id(uid),and a stutus saying (\"succesfull\")\nif university is created previously just sent the id with the request "
+			},
+			"response": []
+		},
+		{
+			"name": "update University data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"sid\":\"157\",\r\n\t\"uid\":\"\",\r\n\t\"u_name\":\"IUB\",\r\n\t\"u_location\":\"Dhaka\",\r\n\t\"u_country\":\"bd\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updateUniversity.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"updateUniversity.php"
+					]
+				},
+				"description": "get university list"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updateUniversity.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"sid\": \"155\",\r\n        \"uid\": \"40\",\r\n        \"u_name\": \"\",\r\n        \"u_location\": \"\",\r\n        \"u_country\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updateUniversity.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"updateUniversity.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Oct 2019 16:37:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"155\",\n        \"uid\": \"40\",\n        \"status\": \"successful\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update study for student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sid\":\"157\",\n\t\"start_edu\":\"edu_start\",\n\t\"duration\":\"duration\",\n\t\"interest\":[\"biology\",\"math\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/studyUpdate.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"studyUpdate.php"
+					]
+				},
+				"description": "update studystar time, duration and interest"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/studyUpdate.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sid\":\"157\",\n\t\"start_edu\":\"edu_start\",\n\t\"duration\":\"duration\",\n\t\"interest\":[\"biology\",\"cse\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/studyUpdate.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"studyUpdate.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Oct 2019 19:34:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"157\",\n        \"Status\": \"successful\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update personal info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sid\":\"157\",\n\t\"full_name\":\"ratul hossain\",\n\t\"alias\":\"ratul\",\n\t\"gender\":\"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updatePersonalInfo.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"updatePersonalInfo.php"
+					]
+				},
+				"description": "updates Fullname, alias, gender"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updatePersonalInfo.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sid\":\"157\",\n\t\"full_name\":\"ratul hossain\",\n\t\"alias\":\"ratul\",\n\t\"gender\":\"male\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updatePersonalInfo.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"updatePersonalInfo.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 14 Oct 2019 19:44:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"157\",\n        \"Status\": \"successful\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get all course data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/courses.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"courses.php"
+					]
+				},
+				"description": "Get all coures list"
+			},
+			"response": [
+				{
+					"name": "Courses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/courses.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"courses.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Oct 2019 13:54:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4325"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": [\n        {\n            \"cid\": \"1\",\n            \"c_name\": \"software engineering\",\n            \"degree\": \"engineering\",\n            \"pinid\": \"12345\"\n        },\n        {\n            \"cid\": \"3\",\n            \"c_name\": \"Acura\",\n            \"degree\": \"mil\",\n            \"pinid\": \"10173\"\n        },\n        {\n            \"cid\": \"4\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"com\",\n            \"pinid\": \"61094\"\n        },\n        {\n            \"cid\": \"5\",\n            \"c_name\": \"Subaru\",\n            \"degree\": \"gov\",\n            \"pinid\": \"79851\"\n        },\n        {\n            \"cid\": \"6\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"biz\",\n            \"pinid\": \"41118\"\n        },\n        {\n            \"cid\": \"7\",\n            \"c_name\": \"Cadillac\",\n            \"degree\": \"com\",\n            \"pinid\": \"75039\"\n        },\n        {\n            \"cid\": \"8\",\n            \"c_name\": \"GMC\",\n            \"degree\": \"com\",\n            \"pinid\": \"65906\"\n        },\n        {\n            \"cid\": \"9\",\n            \"c_name\": \"Land Rover\",\n            \"degree\": \"edu\",\n            \"pinid\": \"32014\"\n        },\n        {\n            \"cid\": \"10\",\n            \"c_name\": \"Cadillac\",\n            \"degree\": \"name\",\n            \"pinid\": \"55465\"\n        },\n        {\n            \"cid\": \"11\",\n            \"c_name\": \"Hyundai\",\n            \"degree\": \"edu\",\n            \"pinid\": \"6905\"\n        },\n        {\n            \"cid\": \"12\",\n            \"c_name\": \"Lexus\",\n            \"degree\": \"org\",\n            \"pinid\": \"58412\"\n        },\n        {\n            \"cid\": \"13\",\n            \"c_name\": \"Buick\",\n            \"degree\": \"com\",\n            \"pinid\": \"85995\"\n        },\n        {\n            \"cid\": \"14\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"org\",\n            \"pinid\": \"17325\"\n        },\n        {\n            \"cid\": \"15\",\n            \"c_name\": \"Subaru\",\n            \"degree\": \"mil\",\n            \"pinid\": \"76347\"\n        },\n        {\n            \"cid\": \"16\",\n            \"c_name\": \"Suzuki\",\n            \"degree\": \"info\",\n            \"pinid\": \"96777\"\n        },\n        {\n            \"cid\": \"17\",\n            \"c_name\": \"Audi\",\n            \"degree\": \"info\",\n            \"pinid\": \"37258\"\n        },\n        {\n            \"cid\": \"18\",\n            \"c_name\": \"Ford\",\n            \"degree\": \"name\",\n            \"pinid\": \"2292\"\n        },\n        {\n            \"cid\": \"19\",\n            \"c_name\": \"Jaguar\",\n            \"degree\": \"edu\",\n            \"pinid\": \"36633\"\n        },\n        {\n            \"cid\": \"20\",\n            \"c_name\": \"Mercury\",\n            \"degree\": \"gov\",\n            \"pinid\": \"97295\"\n        },\n        {\n            \"cid\": \"21\",\n            \"c_name\": \"Nissan\",\n            \"degree\": \"biz\",\n            \"pinid\": \"36706\"\n        },\n        {\n            \"cid\": \"22\",\n            \"c_name\": \"Pontiac\",\n            \"degree\": \"net\",\n            \"pinid\": \"64256\"\n        },\n        {\n            \"cid\": \"23\",\n            \"c_name\": \"Toyota\",\n            \"degree\": \"mil\",\n            \"pinid\": \"4399\"\n        },\n        {\n            \"cid\": \"24\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"gov\",\n            \"pinid\": \"27417\"\n        },\n        {\n            \"cid\": \"25\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"edu\",\n            \"pinid\": \"32126\"\n        },\n        {\n            \"cid\": \"26\",\n            \"c_name\": \"Ford\",\n            \"degree\": \"name\",\n            \"pinid\": \"73293\"\n        },\n        {\n            \"cid\": \"27\",\n            \"c_name\": \"Saab\",\n            \"degree\": \"gov\",\n            \"pinid\": \"26597\"\n        },\n        {\n            \"cid\": \"28\",\n            \"c_name\": \"Infiniti\",\n            \"degree\": \"com\",\n            \"pinid\": \"47389\"\n        },\n        {\n            \"cid\": \"29\",\n            \"c_name\": \"GMC\",\n            \"degree\": \"mil\",\n            \"pinid\": \"17418\"\n        },\n        {\n            \"cid\": \"30\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"edu\",\n            \"pinid\": \"53034\"\n        },\n        {\n            \"cid\": \"31\",\n            \"c_name\": \"Audi\",\n            \"degree\": \"name\",\n            \"pinid\": \"15845\"\n        },\n        {\n            \"cid\": \"32\",\n            \"c_name\": \"Lexus\",\n            \"degree\": \"info\",\n            \"pinid\": \"20871\"\n        },\n        {\n            \"cid\": \"33\",\n            \"c_name\": \"Ford\",\n            \"degree\": \"edu\",\n            \"pinid\": \"44155\"\n        },\n        {\n            \"cid\": \"34\",\n            \"c_name\": \"Audi\",\n            \"degree\": \"edu\",\n            \"pinid\": \"75637\"\n        },\n        {\n            \"cid\": \"35\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"name\",\n            \"pinid\": \"14406\"\n        },\n        {\n            \"cid\": \"36\",\n            \"c_name\": \"Chrysler\",\n            \"degree\": \"gov\",\n            \"pinid\": \"88635\"\n        },\n        {\n            \"cid\": \"37\",\n            \"c_name\": \"Acura\",\n            \"degree\": \"edu\",\n            \"pinid\": \"8395\"\n        },\n        {\n            \"cid\": \"38\",\n            \"c_name\": \"BMW\",\n            \"degree\": \"name\",\n            \"pinid\": \"20947\"\n        },\n        {\n            \"cid\": \"39\",\n            \"c_name\": \"Toyota\",\n            \"degree\": \"biz\",\n            \"pinid\": \"39129\"\n        },\n        {\n            \"cid\": \"40\",\n            \"c_name\": \"Mercedes-Benz\",\n            \"degree\": \"gov\",\n            \"pinid\": \"32709\"\n        },\n        {\n            \"cid\": \"41\",\n            \"c_name\": \"Volkswagen\",\n            \"degree\": \"name\",\n            \"pinid\": \"50128\"\n        },\n        {\n            \"cid\": \"42\",\n            \"c_name\": \"Volvo\",\n            \"degree\": \"gov\",\n            \"pinid\": \"32149\"\n        },\n        {\n            \"cid\": \"43\",\n            \"c_name\": \"Hyundai\",\n            \"degree\": \"gov\",\n            \"pinid\": \"59160\"\n        },\n        {\n            \"cid\": \"44\",\n            \"c_name\": \"Toyota\",\n            \"degree\": \"edu\",\n            \"pinid\": \"98612\"\n        },\n        {\n            \"cid\": \"45\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"org\",\n            \"pinid\": \"1978\"\n        },\n        {\n            \"cid\": \"46\",\n            \"c_name\": \"Chrysler\",\n            \"degree\": \"name\",\n            \"pinid\": \"14213\"\n        },\n        {\n            \"cid\": \"47\",\n            \"c_name\": \"Lexus\",\n            \"degree\": \"mil\",\n            \"pinid\": \"89241\"\n        },\n        {\n            \"cid\": \"48\",\n            \"c_name\": \"Isuzu\",\n            \"degree\": \"mil\",\n            \"pinid\": \"47225\"\n        },\n        {\n            \"cid\": \"49\",\n            \"c_name\": \"Ford\",\n            \"degree\": \"net\",\n            \"pinid\": \"48628\"\n        },\n        {\n            \"cid\": \"50\",\n            \"c_name\": \"Land Rover\",\n            \"degree\": \"org\",\n            \"pinid\": \"55517\"\n        },\n        {\n            \"cid\": \"51\",\n            \"c_name\": \"Volkswagen\",\n            \"degree\": \"biz\",\n            \"pinid\": \"44781\"\n        },\n        {\n            \"cid\": \"52\",\n            \"c_name\": \"BMW\",\n            \"degree\": \"biz\",\n            \"pinid\": \"69260\"\n        },\n        {\n            \"cid\": \"53\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"name\",\n            \"pinid\": \"75323\"\n        },\n        {\n            \"cid\": \"54\",\n            \"c_name\": \"Mercury\",\n            \"degree\": \"com\",\n            \"pinid\": \"19559\"\n        },\n        {\n            \"cid\": \"55\",\n            \"c_name\": \"Pontiac\",\n            \"degree\": \"biz\",\n            \"pinid\": \"4456\"\n        },\n        {\n            \"cid\": \"56\",\n            \"c_name\": \"Lexus\",\n            \"degree\": \"edu\",\n            \"pinid\": \"42993\"\n        },\n        {\n            \"cid\": \"57\",\n            \"c_name\": \"Dodge\",\n            \"degree\": \"mil\",\n            \"pinid\": \"50343\"\n        },\n        {\n            \"cid\": \"58\",\n            \"c_name\": \"Scion\",\n            \"degree\": \"name\",\n            \"pinid\": \"92538\"\n        },\n        {\n            \"cid\": \"59\",\n            \"c_name\": \"BMW\",\n            \"degree\": \"gov\",\n            \"pinid\": \"42380\"\n        },\n        {\n            \"cid\": \"60\",\n            \"c_name\": \"Infiniti\",\n            \"degree\": \"gov\",\n            \"pinid\": \"39488\"\n        },\n        {\n            \"cid\": \"61\",\n            \"c_name\": \"Porsche\",\n            \"degree\": \"gov\",\n            \"pinid\": \"46142\"\n        },\n        {\n            \"cid\": \"62\",\n            \"c_name\": \"BMW\",\n            \"degree\": \"gov\",\n            \"pinid\": \"96023\"\n        },\n        {\n            \"cid\": \"63\",\n            \"c_name\": \"Mazda\",\n            \"degree\": \"gov\",\n            \"pinid\": \"33113\"\n        },\n        {\n            \"cid\": \"64\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"org\",\n            \"pinid\": \"11513\"\n        },\n        {\n            \"cid\": \"65\",\n            \"c_name\": \"Mercury\",\n            \"degree\": \"name\",\n            \"pinid\": \"68328\"\n        },\n        {\n            \"cid\": \"66\",\n            \"c_name\": \"Mazda\",\n            \"degree\": \"org\",\n            \"pinid\": \"69489\"\n        },\n        {\n            \"cid\": \"67\",\n            \"c_name\": \"Buick\",\n            \"degree\": \"edu\",\n            \"pinid\": \"53249\"\n        },\n        {\n            \"cid\": \"68\",\n            \"c_name\": \"Chevrolet\",\n            \"degree\": \"name\",\n            \"pinid\": \"79583\"\n        },\n        {\n            \"cid\": \"69\",\n            \"c_name\": \"Volkswagen\",\n            \"degree\": \"net\",\n            \"pinid\": \"53242\"\n        },\n        {\n            \"cid\": \"70\",\n            \"c_name\": \"Math\",\n            \"degree\": \"CSE\",\n            \"pinid\": \"16542\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/groups.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"groups.php"
+					]
+				},
+				"description": "Get all data of groups"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE COURSE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sid\":\"157\",\n\t\"cid\":\"\",\n\t\"c_name\":\"xyz\",\n\t\"degree\":\"cse\",\n\t\"cp_id\":\"cse102\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updatecourse.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"updatecourse.php"
+					]
+				},
+				"description": "update course "
+			},
+			"response": [
+				{
+					"name": "update course",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sid\":\"157\",\n\t\"cid\":\"\",\n\t\"c_name\":\"xyz\",\n\t\"degree\":\"cse\",\n\t\"cp_id\":\"cse102\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updatecourse.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"updatecourse.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Oct 2019 14:22:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"157\",\n        \"cid\": \"71\",\n        \"status\": \"successful\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update groups",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"sid\": \"157\",\r\n        \"gid\": \"\",\r\n        \"gname\": \"biology\",\r\n        \"g_pinid\":\"bio1354\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updategroup.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"xtraskool",
+						"gitlab",
+						"xtraskool",
+						"xtraskool",
+						"APIs",
+						"updategroup.php"
+					]
+				},
+				"description": "if user select a group which is allready greated just sent the gid(group id) with sid(student id).it will update student databse with the gourp id\n\nif user create a new group just sent group name and group pic id and put the gid black,it will create a new group and update the group id to the student..databse\n\n"
+			},
+			"response": [
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updategroup.php",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"sid\": \"157\",\r\n        \"gid\": \"\",\r\n        \"gname\": \"biology\",\r\n        \"g_pinid\":\"bio1354\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updategroup.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"updategroup.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Oct 2019 15:21:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"157\",\n        \"gid\": \"85\",\n        \"status\": \"successful\"\n    }\n}"
+				},
+				{
+					"name": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updategroup.php",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"sid\": \"157\",\r\n        \"gid\": \"84\",\r\n        \"gname\": \"\",\r\n        \"g_pinid\":\"\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/xtraskool/gitlab/xtraskool/xtraskool/APIs/updategroup.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"xtraskool",
+								"gitlab",
+								"xtraskool",
+								"xtraskool",
+								"APIs",
+								"updategroup.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Oct 2019 15:21:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"students\": {\n        \"sid\": \"157\",\n        \"gid\": \"85\",\n        \"status\": \"successful\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

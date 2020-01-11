@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.background{
+    width: 100%;
+    min-height: 350px;
+    height: 50%;
+    
+}
+.login{
+    position: absolute;
+    height: 70%;
+    max-height: 500px;
+    max-width: 400px;
+    background: white;
+    top: 17%;
+    left: 35%;
+    width: 40%;    
+}
+h3{
+    font-size: 1.5rem;
+    margin-left: 65px;
+}
+h4{
+    font-size: 1.0rem; 
+    margin-left: 105px; 
+    margin-top: 3px;
+  
+}
+input{
+    width: 85%;
+    height: 40px;
+    margin-top:10px;
+    margin-left: 25px;
+    overflow: hidden;
+    border: 2px solid #4dda44;
+    border-radius: 5px;
+}
+button{
+    width: 85%;
+    margin-top: 20px;
+    min-height: 50px;
+    margin-left: 25px;
+    background-color: #4dda44;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+   
+}
+
+
+
